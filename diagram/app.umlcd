@@ -2028,25 +2028,26 @@
       "angle": 0,
       "attributes": [
         "id:java.lang.String",
+        "dataExpiracao:java.sql.Timestamp",
         "dataHora:java.sql.Timestamp"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 70,
+          "height": 90,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "id\ndataHora\n"
+          "text": "id\ndataExpiracao\ndataHora\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 79.265625,
-          "text": "Texto\nData e Hora com Fuso\n"
+          "ref-x": 104.328125,
+          "text": "Texto\nData e Hora com Fuso\nData e Hora com Fuso\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,120)"
+          "transform": "translate(0,140)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -2084,6 +2085,37 @@
           "isUniqueKey": false,
           "isNullable": false,
           "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "dataExpiracao",
+          "type": "java.sql.Timestamp",
+          "dbName": "dataExpiracao",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Data Expiracao",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
           "multitenantContext": "",
           "jsonIgnore": false,
           "isTransient": false,
@@ -2149,8 +2181,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 107.89323043823242,
-        "width": 207.921875
+        "height": 118.69715118408203,
+        "width": 232.984375
       },
       "tableName": "",
       "tableScheme": null,

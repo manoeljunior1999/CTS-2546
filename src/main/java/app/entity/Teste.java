@@ -37,6 +37,14 @@ public class Teste implements Serializable {
     * @generated
     */
     @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "dataExpiracao", nullable = true, unique = false, insertable=true, updatable=true, columnDefinition = "TIMESTAMP")
+        
+        private java.util.Date dataExpiracao;
+
+    /**
+    * @generated
+    */
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "dataHora", nullable = true, unique = false, insertable=true, updatable=true, columnDefinition = "TIMESTAMP")
         
         private java.util.Date dataHora;
@@ -65,6 +73,25 @@ public class Teste implements Serializable {
     */
     public Teste setId(java.lang.String id){
         this.id = id;
+        return this;
+    }
+    /**
+    * Obtém dataExpiracao
+    * return dataExpiracao
+    * @generated
+    */
+    
+    public java.util.Date getDataExpiracao(){
+        return this.dataExpiracao;
+    }
+
+    /**
+    * Define dataExpiracao
+    * @param dataExpiracao dataExpiracao
+    * @generated
+    */
+    public Teste setDataExpiracao(java.util.Date dataExpiracao){
+        this.dataExpiracao = dataExpiracao;
         return this;
     }
     /**

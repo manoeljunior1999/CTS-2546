@@ -22,10 +22,10 @@ public static Var Executar() throws Exception {
 
    public Var call() throws Exception {
 
-    System.out.println(
+    cronapi.database.Operations.insert(Var.valueOf("app.entity.Teste"),Var.valueOf("dataHora",
     cronapi.dateTime.Operations.formatDateTime(
     cronapi.dateTime.Operations.getNow(),
-    Var.valueOf("dd/MM/YYYY HH:mm:ss")).getObjectAsString());
+    Var.valueOf("dd/MM/YYYY HH:mm:ss"))));
     return Var.VAR_NULL;
    }
  }.call();
