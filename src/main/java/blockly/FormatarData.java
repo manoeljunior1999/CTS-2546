@@ -27,7 +27,7 @@ public static Var Executar() throws Exception {
     data =
     cronapi.database.Operations.getField(
     cronapi.database.Operations.query(Var.valueOf("app.entity.Teste"),Var.valueOf("select t from Teste t   having MIN(t.id) = :id"),Var.valueOf("id",
-    Var.valueOf("4EBCC797-5796-4ED8-A10B-A222FEA03BF2"))),
+    Var.valueOf("768306D1-EC61-4E15-9DB4-F6CE2F34EA95"))),
     Var.valueOf("this[0].dataHora"));
 
     System.out.println(

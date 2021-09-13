@@ -26,6 +26,11 @@ public static Var Executar() throws Exception {
     cronapi.dateTime.Operations.formatDateTime(
     cronapi.dateTime.Operations.getNow(),
     Var.valueOf("dd/MM/YYYY HH:mm:ss"))));
+
+    System.out.println(
+    cronapi.dateTime.Operations.formatDateTime(
+    cronapi.dateTime.Operations.getNow(),
+    Var.valueOf("dd/MM/YYYY HH:mm:ss")).getObjectAsString());
     return Var.VAR_NULL;
    }
  }.call();
